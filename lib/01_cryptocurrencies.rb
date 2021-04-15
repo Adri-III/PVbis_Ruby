@@ -39,7 +39,7 @@ end
 
 # Question n°4 : (Cryptomonnaie max - cours < 6000)
 def crypto_cours_below6000_max(crypto_currency_sorted)
-    below6000_max = crypto_currency_sorted.select{|k, v| v <6000}
+    below6000_max = crypto_currency_sorted.select{|k, v| v < 6000}
     print "> "
     puts "La cryptomonnaie dont la valeur est la plus haute au dessous des 6000 #{below6000_max.max_by{|k, v| v}}."
     puts " "
